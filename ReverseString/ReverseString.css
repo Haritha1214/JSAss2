@@ -1,0 +1,17 @@
+h1{ 
+    color:darkgoldenrod;
+}
+div {
+    align:center;
+    background-color:#c8fcfc;
+    width: 300px;
+    height: 50px;  
+    padding: 50px;
+    border: 9px solid rgb(218, 155, 155);
+}
+
+#btn {
+    background-color:darkseagreen;
+    border: 2px solid black;
+  }
+  

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove vowels</title>
+    <link rel="stylesheet" href="vowels.css">
+</head>
+<body>
+    <h1>Text Without Vowels</h1>
+    <div id="main">
+           <input id="input" placeholder="Enter your text" type="text"> </br> </br>
+           <button id="button" type="button" class="btn">Submit</button> </br> </br>
+           <h id="Head" > </h>  
+           <p id="final"> </p>
+    </div>
+   
+    <script defer>
+
+        function vowelremoval(word)
+        {
+          word =document.getElementById("input").value;
+          var vList = 'aeiouAEIOU';
+          var List=[];
+          
+          for(var i = 0; i < word .length ; i++)
+          {
+            if (vList.indexOf(word [i]) !== -1)
+            {
+              continue;
+            }
+            else{
+                List.push(word [i])
+            }
+          
+          }
+          document.getElementById("Head").innerHTML = 'After Removing vowels from the given text,';
+          var final=List.join("")
+          document.getElementById("final").innerHTML = final;
+        }
+        
+        
+    
+        document.getElementById("button").addEventListener('click',vowelremoval);
+        
+        </script>
+
+</body>
+</html>
